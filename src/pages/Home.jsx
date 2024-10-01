@@ -3,6 +3,7 @@ import { FaUtensils, FaSearch, FaHeart, FaArrowUp, FaArrowRight } from 'react-ic
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { MdSoupKitchen } from "react-icons/md";
 import { useNavigate, NavLink } from 'react-router-dom';
+import Vid1 from '../assets/Videos/Vid-1.mp4';
 
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -79,7 +80,7 @@ const Home = () => {
             <div className="w-full h-40 md:h-56 rounded-md overflow-hidden relative">
               <video 
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src="src/assets/Videos/Vid-1.mp4"
+                src={Vid1}
                 title="Recip.io"
                 autoPlay
                 loop
